@@ -1,0 +1,57 @@
+<html>
+<p id="demo"></p>
+<head>
+<link rel="stylesheet" href="C:\Users\Administrator\Desktop\sty7.css">
+<script>
+var person={
+firstname:"Kishore",
+lastname:"SAi",
+};
+document.getElementById("demo").innerHTML= person.firstname + " is " + person.age + " years old ";
+function strcat(){
+str1=document.getElementById("demo1").value;
+str2=document.getElementById("demo2").value;
+document.getElementById("result").value=str1+str2;
+}
+function strcpy(){
+str1=document.getElementById("demo1").value;
+str2=str1;
+document.getElementById("result").value=str2;
+}
+function strcmp(){
+str1=document.getElementById("demo1").value;
+str2=document.getElementById("demo2").value;
+document.getElementById("result").value=str1.localeCompare(str2);
+}
+function strup(){
+str1=document.getElementById("demo1").value;
+str=str1.toUpperCase();
+document.getElementById("result").value=str;
+}
+function strdown(){
+str1=document.getElementById("demo1").value;
+str2=str1.toLowerCase();
+document.getElementById("result").value=str2;
+}
+function strlen() {
+str1 = document.getElementById("demo1").value;
+n = str1.length;
+document.getElementById("result").value = n;
+}
+
+</script>
+</head>
+<body style="background-image:url('4.jpg');background-size:cover;" id="calc-contain">
+<h1>string 1:<input type="text" id="demo1"></h1><br><br>
+<h1>string 2:<input type="text" id="demo2"></h1><br><br>
+<input type="button" onclick="strcat()" value="strcat">
+<input type="button" onclick="strcpy()" value="strcpy">
+<input type="button" onclick="strcmp()" value="strcmp">
+<input type="button" onclick="strup()" value="strup">
+<input type="button" onclick="strdown()" value="strdown">
+<input type="button" onclick="strlen()" value="strlen"><br><br>
+
+
+<h1>Result:<input type="text" id="result"></h1>
+</body>
+</html>
