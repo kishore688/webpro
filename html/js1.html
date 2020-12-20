@@ -1,0 +1,74 @@
+<html>
+<head>
+<h3>js objects </h3>
+
+<p id="id1"></p>
+<p id="id2"></p>
+<p id="id3"></p>
+
+<p id="id4"></p>
+<p id="id5"></p>
+<p id="id6"></p>
+<p id="id7"></p>
+<p id="id8"></p>
+<p id="id9"></p>
+<p id="id10"></p>
+<p id="id11"></p>
+
+<script>
+
+var student={
+roll:123,
+name:"steve john",
+age=20,
+cgpa=9.15
+};
+document.getElementById("id1").innerHTML="roll no:"+""+student.roll+""+"is"+""+student.name;
+document.getElementById("id2").innerHTML="roll no:"+""+student.roll+""+"CGPA is"+""+student["cgpa"];
+var x=student.age;
+document.getElementById("id3").innerHTML="roll no:"+""+student.roll+""+"age is"+""+x;
+
+var total=0;
+var marks={eng:50,tam:60,mat:80};
+var sum;
+for(sum in marks)
+{
+total=total+marks[sum];
+}
+document.getElementById("id4").innerHTML="roll no:"+""+student.roll+""+"total marks="+""+total;
+
+student.dept="CSE";
+document.getElementById("id1").innerHTML="roll no:"+""+student.roll+""+"department is"+""+student.dept;
+var personal_details={
+father:"john",
+mother:"mary",
+parents:function()
+{
+return this.father+" "+"and "+this.mother;
+}
+};
+document.getElementById("id6").innerHTML="roll no:"+""+student.roll+""+"parents are"+""+personal_details.parents();
+var contact_details={
+mobile:123456789,
+email:"acs@xyz.com",
+get contact()
+{
+return this.mobile+" "+"and "+this.email;
+}
+};
+document.getElementById("id3").innerHTML="roll no:"+""+student.roll+""+"contact details are"+""+contact_details.contact;
+
+var media={
+whatsapp:123456,
+set wapp(num)
+{
+this.whatsapp=num;
+}
+};
+media.wapp=56468598;
+document.getElementById("id8").innerHTML="roll no:"+""+student.roll+""+"whatsapp no is"+""+media.whatsapp;
+
+function Education(sslc,hsc,ug){
+this.sslc_school=sslc;
+this.hsc_school=hsc;
+this.ug_college=ug;

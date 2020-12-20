@@ -1,0 +1,41 @@
+<html>
+<body>
+<h2>DOM </h2>
+<p id="sample">Good Morning!</p>
+<p>Gud afternoon</p>
+<div id="both">
+<p>first paragraph</p>
+<p>second paragraph</p>
+</div>
+<form id="f1" action="">
+ First name: <input type="text" name="fname" value="kishore"><br>
+ Last name: <input type="text" name="lname" value="sai"><br>
+ Age: <input type="text" name="age" value=19><br>
+ </form>
+<button onClick="action()">Display</button><br>
+ 
+<a name="html">HTML tutorial</a><br>
+<a name="html">CSS tutorial</a><br>
+<a name="html">JS tutorial</a><br>
+<a name="html">DOM tutorial</a><br>
+ 
+<p id="id1"></p>
+<p id="id2"></p>
+<p id="id3"></p>
+<p id="id4"></p>
+<p id="id5"></p>
+<p id="id6"></p>
+
+<script>
+var dom=document.getElementById("sample");
+document.getElementById("id1").innerHTML=dom.innerHTML;
+
+var x=document.getElementByTagName("p");
+document.getElementById("id2").innerHTML='the text in first paragraph (index 0) is: '+x[0].innerHTML;
+document.getElementById("id3").innerHTML='the text in second paragraph (index 1) is: '+x[1].innerHTML;
+
+var x=document.getElementById("both");
+var z=y.getElementByTagName("p");
+document.getElementById("id4").innerHTML='the text in second paragraph (index 1) is: '+x[1].innerHTML;
+
+</html>
