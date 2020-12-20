@@ -1,0 +1,58 @@
+<html>
+<head>
+</head>
+<i>
+<body style="background-color:grey;background-image:url('12.jpg');">
+    <h2 id="h1">Hello World<br></h2>
+    <p id="p1">hai have a pleasent morning</p>
+    <img id="img" src="http://www.lovethispic.com/uploaded_images/82943-Anime-Nature.gif?1" style="width:50%;height:50%;"><br>
+    <h2 id="h2">The World Of Nature</h2>
+    <button type="button" onclick="document.getElementById('h2').style.color='red'" > Click Me </button><br>
+	<br>
+    <h2> "world of peace"</h2>
+    <p> to the vast life we live</p>
+    <button id="myBtn">Try It</button>
+    <p id="p2"><b> hai Listener<b><br></p>
+    <h1 id="id1">My First Page </h1>
+    <script>
+    document.write("hello guys say hai to my page<br><br>");
+    document.write(Date());
+    document.getElementById("h1").innerHTML="Happy Morning";
+    document.getElementById("p1").style.color="orange";
+    document.getElementById("h1").style.color="white";
+    document.getElementById("h1").style.backgroundColor="green";
+    document.getElementById("p1").style.fontFamily="italic";
+    document.getElementById("p1").style.fontSize="150%";
+    document.getElementById("img").src="http://www.lovethispic.com/uploaded_images/82943-Anime-Nature.gif?1";
+    
+    document.getElementById("id1").addEventListener("mousedown", mDown);
+    document.getElementById("id1").addEventListener("mouseup", mUp);
+    function mDown() {
+    id1.style.backgroundColor = "#1ec5e5";
+    id1.innerHTML = "Release Me";
+    }
+
+    function mUp() {
+    id1.style.backgroundColor="LightGreen";
+    id1.innerHTML="Thank You";
+    }
+    document.getElementById("myBtn").addEventListener("click",function()
+    {
+        alert(Date())
+        
+    });
+    document.getElementById("myBtn").addEventListener("click",function()
+        {
+            var a = prompt("Enter number");
+            alert("hai");
+            
+        });
+    document.getElementById("myBtn").addEventListener("click",function()
+            {
+                alert("HaveNiceDay")
+            });   
+</script>
+</body>
+</html>			
+
+    
