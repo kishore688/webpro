@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="C:\Users\Administrator\Desktop\sty.css">
+</head>
+<body style="background-image:url('4563.jpg')">
+<script>
+function solve(val)
+{
+    document.getElementById("result").value+=val
+}
+function result()
+    {
+      let a = document.getElementById("result").value
+      let b = eval(a)
+	  document.getElementById("result").value = b
+    }
+function clr()
+        {
+            document.getElementById("result").value = ""
+        }
+</script>
+<div id="calc-contain">
+<form>
+<input type="text" id="result" name="ans"/>
+<br>
+<input type="button" onclick="solve('1')" value="1" hspace="10"/>
+<input type="button" onclick="solve('2')" value="2" hspace="10"/>
+<input type="button" onclick="solve('3')" value="3" hspace="10"/>
+<input type="button" onclick="solve('+')" value="+" hspace="10"/>
+<br><br>
+<input type="button" onclick="solve('4')" value="4" hspace="10"/>
+<input type="button" onclick="solve('5')" value="5" hspace="10"/>
+<input type="button" onclick="solve('6')" value="6" hspace="10"/>
+<input type="button" onclick="solve('-')" value="-" hspace="10"/>
+<br><br>
+<input type="button" onclick="solve('7')" value="7" hspace="10"/>
+<input type="button" onclick="solve('8')" value="8" hspace="10"/>
+<input type="button" onclick="solve('9')" value="9" hspace="10"/>
+<input type="button" onclick="solve('*')" value="*" hspace="10"/>
+<br><br>
+<input type="button" onclick="clr()" value="c" hspace="10"/>
+<input type="button" onclick="solve('0')" value="0" hspace="10"/>
+<input type="button" onclick="ans.value=eval(ans.value)" value="=" hspace="10"/>
+<input type="button" onclick="solve('/')" value="/" hspace="10"/>
+<br>
+</div>
+</form>
+</body>
+</html>
